@@ -1,0 +1,311 @@
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    color: #151d28;
+    background-color: #f9fbff;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*===============HEADER START================*/
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+/*===============HEADER END================*/
+
+/*===============INTRO START================*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 768px;
+    color: #f9fbff;
+    background: url(../img/intro.jpg) right no-repeat;
+}
+
+.nav__name {
+    padding-top: 30px;
+    display: flex;
+    font-weight: 700;
+    padding-left: 1303px;
+}
+
+.nav {
+    display: flex;
+    font-weight: 600;
+    padding-left: 1260px;
+}
+
+li {
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+.nav__link {
+    opacity: 0.65;
+    color: #f9fbff;
+    text-decoration: none;
+    transition: opacity 0.1s linear;
+}
+
+.nav__link:hover {
+    opacity: 1;
+}
+
+.intro__title {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 32px;
+    color: #415167;
+}
+
+.intro__title1 {
+    color: #f9fbff;
+    background-color: #c7a17a;
+    width: 540px;
+}
+/*===============INTRO END================*/
+
+/*===============FEATURES START===============*/
+.features__subtitle {
+    margin-top: 100px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.features__title {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    margin: 100px 0px;
+    color: #232c38;
+}
+
+.features__item {
+    width: 25%;
+    text-align: center;
+}
+
+.features__topic {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.features__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+}
+/*===============FEATURES END===============*/
+
+/*===============WORKS START===============*/
+.works__bg {
+    background-image: url(../img/background2.jpg);
+}
+
+.work__item {
+    background: #f9fbff;
+}
+
+.works__subtitle {
+    margin-top: 100px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.works__title {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.works {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.work__1 {
+    display: flex;
+    padding-left: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.work__2 {
+    display: flex;
+    padding-left: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.work__3 {
+    display: flex;
+    padding-left: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    grid-column: 1/2;
+    grid-row: 2/2;
+}
+
+.work__4 {
+    display: flex;
+    padding-left: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    grid-column: 2/2;
+    grid-row: 2/2;
+}
+
+.work__price {
+    padding-top: 42px;
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 20px;
+    color: #c7a17a;
+}
+
+.work__title {
+    padding-top: 8px;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 24px;
+    color: #232c38;
+}
+
+.work__subtitle {
+    padding-top: 24px;
+    padding-bottom: 18px;
+    font-family: Nunito;
+    font-weight: 300;
+    font-size: 16px;
+    color: #151d28;
+}
+
+.work__buy {
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: #f9fbff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 34px;
+    background: #c7a17a;
+    border-radius: 50px;
+}
+
+.work__details {
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 16px;
+    color: #415167;
+    display: inline-block;
+    text-decoration: none;
+}
+/*===============WORKS END===============*/
+
+/*===============GIFTSET START===============*/
+.giftset__item {
+    display: flex;
+}
+
+.giftset__bio__both {
+    display: flex;
+}
+
+.work__bio__2 {
+    padding: 0 50px;
+}
+
+.work__bio__title {
+    font-weight: 300;
+    font-size: 16px;
+    color: #415167;
+    opacity: 0.7;
+}
+
+.work__bio__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    color: #415167;
+}
+/*===============GIFTSET END===============*/
+
+/*===============COMBO START===============*/
+.combos {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px auto;
+    grid-gap: 30px;
+    display: grid;
+}
+
+.combo__1 {
+    padding-left: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.combo__2 {
+    padding-left: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.combo__3 {
+    padding-left: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/*===============COMBO END===============*/
+
+/*===============FOOTER START===============*/
+.footer {
+    background: #edf0f5;
+    width: 100vw;
+    height: auto;
+    padding-top: 40px;
+    color: #415167;
+}
+
+.footer__content {
+    text-align: center;
+}
+
+.footer__bottom {
+    text-align: center;
+}
+/*===============FOOTER END===============*/
