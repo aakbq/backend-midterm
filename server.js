@@ -5,11 +5,11 @@ const https = require("https");
 const app = express()
 const port = 3000;
 
+app.use(bodyParser.urlencoded({extended: true}))
 app.set('view engine', 'ejs')
 
 app.use(express.static('public'))
 
-app.use(bodyParser.urlencoded({extended: true}))
 
 app.use("/", require("./routes/index.js"))
 app.use("/about", require("./routes/about.js"))

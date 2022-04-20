@@ -7,18 +7,15 @@ router
     .get((req, res) => {
         res.render(path.resolve('./views/menu.ejs'), {price: 1});
     }).post((req, res) => {
-    let exchange = req.body.curr
+    let exchange = req.body.curr.toUpperCase()
     let key = 'C25AA8BF-C42A-4F4C-B507-C02CF3E92EBF';
     let url = `https://rest.coinapi.io/v1/exchangerate/USD/${exchange}?apikey=${key}`
-    console.log('a')
     https.get(url, function (response) {
         response.on('data', data => {
-            let a = JSON.parse(data);
-            let res = a.rate;
-            console.log('a')
-            console.log(res)
-            res.render('C:\\Users\\Актоты\\WebstormProjects\\api\\views\\menu.ejs', {
-                price: res
+            let a = JSON.parse(data)
+            let result = a.rate
+            res.render(path.resolve('./views/menu.ejs'), {
+                price: result
             });
         })
     });
