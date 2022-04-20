@@ -23,4 +23,4 @@ router
         })
     });
 })
-module.exports = rout
+module.exports = router
